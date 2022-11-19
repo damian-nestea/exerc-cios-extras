@@ -968,3 +968,36 @@ while(quantidadeAtual < quantidadeTotal){
 **** */ 
 
 
+
+// EXERCÍCIO 1
+/* console.log(`PROGRAMA DE CADASTRO DE ANIMAIS DE ESTIMAÇÃO`);
+// função captura dados de bichinhos
+const capturaDadosBichinhos = (qtdeBichinhos,array) => {
+	if(qtdeBichinhos > 0){
+		console.log(`Digite o nome dos bichinhos`);
+		for(let i = 0;i < qtdeBichinhos;i++){
+			nomeBichinhos.push(prompt(`Digite o nome do bichinho`));
+		}
+	} else if(qtdeBichinhos === 0){
+		console.log(`Que pena! Você pode adotar um pet!`);
+	} else{
+		console.log(`Quantidade inválida`);
+	}
+}
+
+const impressaoDadosBichinhos = (array) => {
+	if(array.length>0){
+		console.log(`Nome dos seus bichinhos!`);
+		for(let i = 0;i < array.length; i++){
+			console.log(`${i+1}. ${array[i]}`);
+		}
+	}else{
+		console.log(`Sem dados para mostrar.`);
+	}
+}
+
+const qtdeBichinhos = Number(prompt(`Quantos bichinhos de estimação você tem?`));
+const nomeBichinhos = [];
+
+capturaDadosBichinhos(qtdeBichinhos,nomeBichinhos);
+impressaoDadosBichinhos(nomeBichinhos); */
