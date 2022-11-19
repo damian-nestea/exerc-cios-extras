@@ -236,7 +236,7 @@ console.log(arrayFrutas);
 
 // exercícios extras
 
-
+//-----------------------------------------------------------------------------------------------
 // EXERCICIOS VARIAVEIS -------------------------------
 /* exercício 1
 let nome;
@@ -308,7 +308,7 @@ const multiplicacao = (numero1,numero2) => {
 console.log(`O primeiro número somado ao segundo número resulta em ${soma(numero1,numero2)}`);
 console.log(`O primeiro número multiplicado ao segundo número resulta em ${multiplicacao(numero1,numero2)}`); */
 
-
+//-----------------------------------------------------------------------------------------------
 // EXERCICIOS VARIAVEIS -------------------------------
 
 /* const bool1 = true
@@ -426,7 +426,7 @@ console.log(`Converter 450xic a lt: ${convertXicToLit(450).toFixed(2)}`);
  */
 
 
-
+//-----------------------------------------------------------------------------------------------
 // EXERCÌCIOS STRINGS  ________________________________________________
 
 /*Exercício de interpretação 1*/
@@ -489,7 +489,7 @@ if(emailValido){
   console.log(emailDominioNovo);
 } */
 
-
+//-----------------------------------------------------------------------------------------------
 /* Exercícios de Array ----------------------------------------------------------- */ 
  
 /* Exercício 1 */
@@ -597,7 +597,7 @@ if(arrayFrutas.includes(encontraFruta)){
   console.log("Fruta não encontrada. Tente de novo!");
 } */
 
-
+//-----------------------------------------------------------------------------------------------
 // EXERCÌCIOS OBJETOS _____----------------------------------------------------------
 
 // Exercício 1 interpretação
@@ -835,7 +835,8 @@ if(generoFilme === 'fantasia' && valorIngresso < 15){
  
 // Desafio 2
 
-// função para encontrar o valor do ingresso
+// função para encontrar o valor do ingresso 
+/*
 const calculaValorIngresso = (tipoDeJogo,etapa,categoria) => {
   switch((etapa === 'sf' || etapa === 'dt' || etapa === 'fi') && (categoria >=1 && categoria <=4)){
     case etapa === 'sf' && categoria === 1:
@@ -926,6 +927,44 @@ const numeroIngressos = Number(prompt("Quantidade de ingressos?"));
 const valorIngresso = calculaValorIngresso(tipoDeJogo,etapaDoJogo,categoria);
 
 imprimeBilhete(nomeCompleto,tipoDeJogo,etapaDoJogo,categoria,numeroIngressos,valorIngresso);
+*/
 
+
+//-----------------------------------------------------------------------------------------------
+// EXERCICIOS DE LAÇOS - ESTRUTURAS DE REPETIÇÃO
+
+// Exercício 1 de interpretação de código.
+/* let valor = 0
+for(let i = 0; i < 5; i++) {
+  valor += i  // somando os numeros do 0 até 4, não inclui o número 5.
+}
+console.log(valor)   */
+
+// Exercício 2 de intepretação de código.
+/*  const lista = [21, 11, 42, 15, 18, 19, 11, 13, 25, 27, 10];
+ let index = 0;
+for (let numero of lista) {
+	if (numero > 18) {
+		console.log(`${numero} e o indice é ${index}`);
+	}
+	index += 1;
+} */
+
+
+// exercício 2 de interpretação de código.
+/* const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
+let quantidadeAtual = 0
+while(quantidadeAtual < quantidadeTotal){
+  let linha = ""
+  for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
+    linha += "*"
+  }
+  console.log(linha)
+  quantidadeAtual++
+}// se digitar 4 imprimira:
+/* *
+**
+***
+**** */ 
 
 
