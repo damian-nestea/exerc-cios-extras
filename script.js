@@ -1040,11 +1040,20 @@ const arrayEmString = (array) => {
 	imprimeArray(arrayStrings);
 }
 
+// função que imprime maior e menor numero dentro de um array com mais de 2 itens
+const maiorEMenor = (array) => {
+	console.log(`Impressão de maior e menor de um array:`)
+	const arrayAux = array.sort(function(a,b){return a-b;});
+	console.log(`O menor número do array é: ${arrayAux[0]}`);
+	console.log(`O maior número do array é: ${arrayAux[arrayAux.length-1]}`);
+}
+
 
 // PROGRAMA
-const arrayNumeros = [30,12,11,6,5,14,3,29,18,98,103,1];
+const arrayNumeros = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55];
 
 imprimeArray(arrayNumeros);
 imprimeNumerosDivididos(arrayNumeros,10);
 criaArrayPares(arrayNumeros);
 arrayEmString(arrayNumeros);
+maiorEMenor(arrayNumeros);
