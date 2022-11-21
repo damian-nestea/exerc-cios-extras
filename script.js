@@ -1019,8 +1019,32 @@ const imprimeNumerosDivididos = (array, numeroDivisor) => {
 	}
 }
 
+// função que cria um array de numeros pares a partir de um array passado pelo usuário
+const criaArrayPares = (array) => {
+	const arrayPares = [];
+	console.log(`Criar e imprime array de números pares a partir de outro array`);
+	for(let numero of array){
+		if(numero % 2 === 0){
+			arrayPares.push(numero);
+		}
+	}
+	imprimeArray(arrayPares);
+}
 
+// função que cria strings mostrando indice e valor do array
+const arrayEmString = (array) => {
+	const arrayStrings = [];
+	for(index in array){
+		arrayStrings.push(`O elemento do índex ${index} é: ${array[index]}`);
+	}
+	imprimeArray(arrayStrings);
+}
+
+
+// PROGRAMA
 const arrayNumeros = [30,12,11,6,5,14,3,29,18,98,103,1];
 
 imprimeArray(arrayNumeros);
 imprimeNumerosDivididos(arrayNumeros,10);
+criaArrayPares(arrayNumeros);
+arrayEmString(arrayNumeros);
