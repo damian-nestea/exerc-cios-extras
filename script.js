@@ -1001,3 +1001,59 @@ const nomeBichinhos = [];
 
 capturaDadosBichinhos(qtdeBichinhos,nomeBichinhos);
 impressaoDadosBichinhos(nomeBichinhos); */
+
+// EXERCÍCIO 2
+// função imprimir array
+const imprimeArray = (array) => {
+	console.log(`Impressão dos elementos do array`);
+	for(let i of array){
+		console.log(i);
+	}
+}
+
+// função imprime os números dividido por 10
+const imprimeNumerosDivididos = (array, numeroDivisor) => {
+	console.log(`Impressão dos elementos do array divididos por ${numeroDivisor}`);
+	for(let numero of array){
+		console.log(`Numero ${numero} dividido por ${numeroDivisor} = ${numero/numeroDivisor}`);
+	}
+}
+
+// função que cria um array de numeros pares a partir de um array passado pelo usuário
+const criaArrayPares = (array) => {
+	const arrayPares = [];
+	console.log(`Criar e imprime array de números pares a partir de outro array`);
+	for(let numero of array){
+		if(numero % 2 === 0){
+			arrayPares.push(numero);
+		}
+	}
+	imprimeArray(arrayPares);
+}
+
+// função que cria strings mostrando indice e valor do array
+const arrayEmString = (array) => {
+	const arrayStrings = [];
+	for(index in array){
+		arrayStrings.push(`O elemento do índex ${index} é: ${array[index]}`);
+	}
+	imprimeArray(arrayStrings);
+}
+
+// função que imprime maior e menor numero dentro de um array com mais de 2 itens
+const maiorEMenor = (array) => {
+	console.log(`Impressão de maior e menor de um array:`)
+	const arrayAux = array.sort(function(a,b){return a-b;});
+	console.log(`O menor número do array é: ${arrayAux[0]}`);
+	console.log(`O maior número do array é: ${arrayAux[arrayAux.length-1]}`);
+}
+
+
+// PROGRAMA
+const arrayNumeros = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55];
+
+imprimeArray(arrayNumeros);
+imprimeNumerosDivididos(arrayNumeros,10);
+criaArrayPares(arrayNumeros);
+arrayEmString(arrayNumeros);
+maiorEMenor(arrayNumeros);
