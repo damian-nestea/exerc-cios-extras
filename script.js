@@ -1001,3 +1001,26 @@ const nomeBichinhos = [];
 
 capturaDadosBichinhos(qtdeBichinhos,nomeBichinhos);
 impressaoDadosBichinhos(nomeBichinhos); */
+
+// EXERCÍCIO 2
+// função imprimir array
+const imprimeArray = (array) => {
+	console.log(`Impressão dos elementos do array`);
+	for(let i of array){
+		console.log(i);
+	}
+}
+
+// função imprime os números dividido por 10
+const imprimeNumerosDivididos = (array, numeroDivisor) => {
+	console.log(`Impressão dos elementos do array divididos por ${numeroDivisor}`);
+	for(let numero of array){
+		console.log(`Numero ${numero} dividido por ${numeroDivisor} = ${numero/numeroDivisor}`);
+	}
+}
+
+
+const arrayNumeros = [30,12,11,6,5,14,3,29,18,98,103,1];
+
+imprimeArray(arrayNumeros);
+imprimeNumerosDivididos(arrayNumeros,10);
