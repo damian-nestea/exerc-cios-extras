@@ -234,6 +234,62 @@ console.log(arrayFrutas);
 
 
 
+// exercício fixação laços 2
+// função impressão filmes
+const impressaoFilmes = (filmes) => {
+  let descricaoFilme = ``;
+  for(let i in filmes){
+    let elenco = `Tem no elenco:`
+    descricaoFilme = `O filme ${filmes[i].titulo} de  ${filmes[i].ano}, do diretor ${filmes[i].diretor}`;
+    for(let descricao of filmes[i].elenco){
+      elenco = elenco + " - " + descricao;
+    }
+    console.log(descricaoFilme);
+    console.log(elenco);
+  }
+}
+
+
+const filmes = [
+  {
+    titulo: 'O Auto da Compadecida',
+    ano: 2000,
+    diretor: 'Guel Arraes',
+    elenco: [
+      'Selton Mello',
+      'Mateus Nachtergaele',
+      'Marco Nanini',
+      'Fernanda Montenegro',
+    ],
+  },
+  {
+    titulo: 'Carandiru',
+    ano: 2001,
+    diretor: 'Hector Babenco',
+    elenco: [
+      'Wagner Moura',
+      'José Carlos Vasconcelos',
+      'Ailton Graça',
+      'Caio Blat',
+    ],
+  },
+  {
+    titulo: 'Aquarius',
+    ano: 2012,
+    diretor: 'Kléber Mendonça Filho',
+    elenco: [
+      'Sônia Braga',
+      'Humberto Carrão',
+      'Maeve Jinkings',
+      'Bárbara Colen',
+    ],
+  },
+]
+
+// PROGRAMA
+impressaoFilmes(filmes);
+
+
 // exercícios extras
 
 //-----------------------------------------------------------------------------------------------
@@ -1004,7 +1060,7 @@ impressaoDadosBichinhos(nomeBichinhos); */
 
 // EXERCÍCIO 2
 // função imprimir array
-const imprimeArray = (array) => {
+/* const imprimeArray = (array) => {
 	console.log(`Impressão dos elementos do array`);
 	for(let i of array){
 		console.log(i);
@@ -1056,4 +1112,4 @@ imprimeArray(arrayNumeros);
 imprimeNumerosDivididos(arrayNumeros,10);
 criaArrayPares(arrayNumeros);
 arrayEmString(arrayNumeros);
-maiorEMenor(arrayNumeros);
+maiorEMenor(arrayNumeros); */
