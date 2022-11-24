@@ -236,7 +236,7 @@ console.log(arrayFrutas);
 
 // exercício fixação laços 2
 // função impressão filmes
-const impressaoFilmes = (filmes) => {
+/* const impressaoFilmes = (filmes) => {
   let descricaoFilme = ``;
   for(let i in filmes){
     let elenco = `Tem no elenco:`
@@ -288,7 +288,39 @@ const filmes = [
 
 // PROGRAMA
 impressaoFilmes(filmes);
+ */
 
+
+// exercício fixação callbacks e array functions 
+// função define vida como 100
+const fullLife = (pokemon) => {
+  const novoObj = {
+    ...pokemon,
+    vida:100
+  };
+  return novoObj;
+}
+
+const pokemons = [ // isso é um array de objetos!
+  { nome: 'Bulbasaur', tipo: 'grama', vida: 40 },
+  { nome: 'Bellsprout', tipo: 'grama', vida: 20 },
+  { nome: 'Charmander', tipo: 'fogo', vida: 35 },
+  { nome: 'Vulpix', tipo: 'fogo', vida: 25 },
+  { nome: 'Squirtle', tipo: 'água', vida: 45 },
+  { nome: 'Psyduck', tipo: 'água', vida: 25 },
+];
+
+// uso de map com callback
+const pokemonsVidaCheia = pokemons.map(fullLife);
+
+console.log(pokemonsVidaCheia);
+
+//uso de filter para filtrar
+const pokemonsDeFogo = pokemons.filter((elemento) => 
+  elemento.tipo ==='fogo'
+);
+
+console.log(pokemonsDeFogo);
 
 // exercícios extras
 
